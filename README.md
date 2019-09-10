@@ -10,17 +10,17 @@ Queremos entender como você trabalha, então dois pontos principais que serão 
 
 Não temos problema com utilização de soluções prontas, afinal, nao reinventamos a roda todos os dias.
 
-Você pode utilizar quaisquer solucao que preferir, quaisquer comando do artisan, stack overflow, pacote do composer ou não, o que estiver à mão para facilitar seu trabalho. Mas, favor, identificar e justificar quaisquer código terceiro sendo utilizado para que possamos saber o que é seu código, o que é código terceiro e entender sua decisão.
+Você pode utilizar qualquer solucao que preferir, qualquer comando do artisan, stack overflow, pacote do composer ou não, o que estiver à mão para facilitar seu trabalho. Mas, favor, identificar e justificar códigos de terceiros sendo utilizados para que possamos saber o que é seu código e o que é código terceiro e, assim, entender sua decisão.
 
 ## Instruções de envio
 
 Faça um fork do projeto para seu github e finalizado o desenvolvimento, faça um pull request para o projeto principal.
 
-Além do seu código, envie instruções detalhadas de como proceder para colocar seus projeto para funcionar.
+Além do seu código, envie instruções detalhadas de como proceder para colocar seu projeto para funcionar.
 
 ## Contato
 
-Qualquer dúvida, critica ou sugestão que voce tiver, favor enviar um email para ti@telium.com.br que lhe auxiliaremos dentro do possível.
+Qualquer dúvida, critica ou sugestão que voce tiver, favor enviar um email para ti@telium.com.br, que lhe auxiliaremos dentro do possível.
 
 ## Prazo
 
@@ -28,7 +28,7 @@ Você tem DEZ dias para a realização desse desafio. Se precisar de mais tempo,
 
 # O problema
 
-Precisamos que você desenvolva uma API REST, em Laravel 5.4 ou maior e PHP7, que irá servir de apoio a um sistema de gerenciamento de diversas lojas.
+Precisamos que você desenvolva uma API REST, em Laravel 5.4 (ou maior) e PHP 7, que irá servir de apoio a um sistema de gerenciamento de diversas lojas.
 
 O sistema será utilizado por lojas e seus funcionários. Esse funcionário associado deve receber um email avisando-o que foi registrado na plataforma. Fique livre para propor a modelagem da relação lojas e funcionários.
 
@@ -40,7 +40,8 @@ O funcionário deve ser capaz de realizar o CRUD de:
 O sistema deve fornecer os seguintes relatórios, para cada loja:
 
 - Produtos mais vendidos;
-- Ticket médio (você pode utilizar a formula Valor Total de Vendas/Numero de Vendas, mas pode sugerir outro calculo para definir o ticket médio)
+- Produtos com baixo estoque (estoque menor que 3);
+- Ticket médio (você pode utilizar a formula Valor Total de Vendas/Numero de Vendas, mas pode sugerir outro calculo para definir o ticket médio. Caso decida utilizar outra formula, favor especificar qual)
 
 Considerações importantes:
 
@@ -48,7 +49,7 @@ Considerações importantes:
 - Não permitir criação de pedido com um produto que não está disponivel em estoque;
 - Manter o estoque de cada loja atualizado de acordo com os pedidos;
 - O sistema deve exigir a autenticação do funcionário, quando necessário;
-- Informações de inserção devem ser validadas;
+- Dados de inserção devem ser validadas;
 - Erros devem ser tratados;
 - Sistema deve ser seguro e as suas informações, consistentes
 
