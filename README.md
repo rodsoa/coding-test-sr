@@ -1,67 +1,62 @@
-# Coding Test - Telium
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-## Instruções Gerais
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Neste teste serão avaliadas sua capacidade de compreensão, análise, interpretação e resolução do problema proposto abaixo.
+## About Laravel
 
-Queremos entender como você trabalha, então dois pontos principais que serão avaliados neste teste são seus códigos e seus commits.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Ferramentas de terceiro
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Não temos problema com utilização de soluções prontas, afinal, nao reinventamos a roda todos os dias.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Você pode utilizar qualquer solucao que preferir, qualquer comando do artisan, stack overflow, pacote do composer ou não, o que estiver à mão para facilitar seu trabalho. Mas, favor, identificar e justificar códigos de terceiros sendo utilizados para que possamos saber o que é seu código e o que é código terceiro e, assim, entender sua decisão.
+## Learning Laravel
 
-## Instruções de envio
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-Faça um fork do projeto para seu github e finalizado o desenvolvimento, faça um pull request para o projeto principal.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Além do seu código, envie instruções detalhadas de como proceder para colocar seu projeto para funcionar.
+## Laravel Sponsors
 
-## Contato
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-Qualquer dúvida, critica ou sugestão que voce tiver, favor enviar um email para ti@telium.com.br, que lhe auxiliaremos dentro do possível.
+### Premium Partners
 
-## Prazo
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
 
-Você tem DEZ dias para a realização desse desafio. Se precisar de mais tempo, basta avisar para negociarmos um novo prazo.
+## Contributing
 
-# O problema
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Precisamos que você desenvolva uma API REST, em Laravel 5.4 (ou maior) e PHP 7, que irá servir de apoio a um sistema de gerenciamento de diversas lojas.
+## Code of Conduct
 
-O sistema será utilizado por lojas e seus funcionários. Esse funcionário associado deve receber um email avisando-o que foi registrado na plataforma. Fique livre para propor a modelagem da relação lojas e funcionários.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-O funcionário deve ser capaz de realizar o CRUD de:
+## Security Vulnerabilities
 
-- Produtos: código, nome, descrição, quantidade em estoque, preço e atributos que podem variar de produto para produto;
-- Pedidos: codigo do pedido, data da compra, nome do comprador, status do pedido (novo, pago, entregue e cancelado), valor do frete e lista de itens do pedido (produto, quantidade e preço);
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-O sistema deve fornecer os seguintes relatórios, para cada loja:
+## License
 
-- Produtos mais vendidos;
-- Produtos com baixo estoque (estoque menor que 3);
-- Ticket médio (você pode utilizar a formula Valor Total de Vendas/Numero de Vendas, mas pode sugerir outro calculo para definir o ticket médio. Caso decida utilizar outra formula, favor especificar qual)
-
-Considerações importantes:
-
-- Não permitir criação de pedido com um produto inexistente;
-- Não permitir criação de pedido com um produto que não está disponivel em estoque;
-- Manter o estoque de cada loja atualizado de acordo com os pedidos;
-- O sistema deve exigir a autenticação do funcionário, quando necessário;
-- Dados de inserção devem ser validadas;
-- Erros devem ser tratados;
-- Sistema deve ser seguro e as suas informações, consistentes
-
-## Pontos Obrigatórios
-
-- SOLID;
-- Design Patterns;
-
-Não esqueça de informar quais padrões foram utilizados e exemplifique sua utilização no código. Você não precisa utilizar todos os possíveis, mas queremos saber quais você sabe utilizar.
-
-## Pontos extras
-
-- Enviar o projeto com um Docker apropriado para rodar o seu desafio e as instruções pertinentes para seu funcionamento;
-- TDD;
-- PSRs;
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
